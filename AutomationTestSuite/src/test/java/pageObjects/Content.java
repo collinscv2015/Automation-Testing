@@ -23,12 +23,24 @@ Thread.sleep(2000);
 return element;
 }
 
+public static WebElement Create_Edit_Message(WebDriver driver) throws Exception{
+element = driver.findElement(By.xpath("//*[@id='DwU5YuXj2imNzv5cHHsT']/div/div/button/i"));
+Thread.sleep(2000);
+return element;
+}
+
 public static WebElement Create_New_Content(WebDriver driver) throws Exception{
 element = driver.findElement(By.cssSelector("a.directory-action.type-message > span"));
 Thread.sleep(2000);
 return element;
 }
 
+
+public static WebElement MessageEdit_Settings(WebDriver driver) throws Exception{
+element = driver.findElement(By.xpath("//*[@id='DwU5YuXj2imNzv5cHHsT']/div/div/ul/li[1]/a"));
+Thread.sleep(2000);
+return element;
+}
 
 // New Message UI Elements
 
@@ -38,6 +50,21 @@ element = driver.findElement(By.name("name"));
 Thread.sleep(2000);
 return element;
 }
+
+
+public static WebElement NameByXpath(WebDriver driver) throws Exception{
+element = driver.findElement(By.xpath("//*[@id='DwU5YuXj2imNzv5cHHsT']/div/div/div[2]/div/div/form/section[1]/div[1]/input"));
+Thread.sleep(2000);
+return element;
+}
+
+
+public static WebElement NameByXpath_New(WebDriver driver) throws Exception{
+element = driver.findElement(By.xpath("//*[@id='DwU5YuXj2imNzv5cHHsT']/div/div/div[2]/div/div/form/section[2]/div[1]/input"));
+Thread.sleep(2000);
+return element;
+}
+
 
 public static WebElement Description(WebDriver driver) throws Exception{
 element = driver.findElement(By.name("description"));
@@ -63,6 +90,14 @@ Thread.sleep(2000);
 return element;
 }
 
+
+public static WebElement Save_Button(WebDriver driver) throws Exception{
+element = driver.findElement(By.xpath("//*[@id='DwU5YuXj2imNzv5cHHsT']/div/div/div[2]/div/footer/div/button[1]/span/span"));
+Thread.sleep(2000);
+return element;
+}
+
+
 public static WebElement Cancel_Button(WebDriver driver) throws Exception{
 element = driver.findElement(By.xpath("//div/button[2]"));
 Thread.sleep(2000);
@@ -78,8 +113,20 @@ Thread.sleep(2000);
 return element;
 }
 
+public static WebElement Edit_Page_Errors(WebDriver driver) throws Exception{
+element = driver.findElement(By.xpath("//*[@id='DwU5YuXj2imNzv5cHHsT']/div/div/div[2]/div/div/form/section[1]/div/strong"));
+Thread.sleep(2000);
+return element;
+}
+
 public static WebElement Name_Error(WebDriver driver) throws Exception{
 element = driver.findElement (By.xpath("//div[@id='site-wrapper']/div/div[3]/div/div[2]/div/div/div[2]/div/div/form/section/div/ul/li"));
+Thread.sleep(2000);
+return element;
+}
+
+public static WebElement Edit_Name_Error(WebDriver driver) throws Exception{
+element = driver.findElement (By.xpath("//*[@id='DwU5YuXj2imNzv5cHHsT']/div/div/div[2]/div/div/form/section[1]/div/ul/li"));
 Thread.sleep(2000);
 return element;
 }

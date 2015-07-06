@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import appModule.CreateMessage;
 import appModule.CreateVariant;
+import appModule.EditMessage;
 import utility.EnviromentURL;
 
 
@@ -30,17 +31,20 @@ public class TestRunner {
 	@Test
 	public void ExecuteTestCase() throws Exception {
 
-	CreateMessage.NewMessage(driver);
-	System.out.println("Successfully, Created New Message.");
+//	CreateMessage.NewMessage(driver);
+//	System.out.println("Successfully, Created New Message.");
+//	
+//	CreateVariant.NewVariant(driver);
+//	System.out.println("Successfully, Created New Variant.");
 	
-	CreateVariant.NewVariant(driver);
-	System.out.println("Successfully, Created New Variant.");
+	EditMessage.NewMessage(driver);
+	System.out.println("Successfully, Created New Message.");
 
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		driver.quit();
+		//driver.quit();
 
 	}
 }
