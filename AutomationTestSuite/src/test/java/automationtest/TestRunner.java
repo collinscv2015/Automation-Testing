@@ -8,8 +8,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import appModule.CreateMessage;
-import appModule.CreateVariant;
+import appModule.Create_Content;
 import utility.EnviromentURL;
 
 
@@ -30,17 +29,14 @@ public class TestRunner {
 	@Test
 	public void ExecuteTestCase() throws Exception {
 
-	CreateMessage.NewMessage(driver);
-	System.out.println("Successfully, Created New Message.");
-	
-	CreateVariant.NewVariant(driver);
-	System.out.println("Successfully, Created New Variant.");
+	Create_Content.New_Content(driver);
+	System.out.println("Successfully, Created New Message and Variant.");
 
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		driver.quit();
+		//driver.quit();
 
 	}
 }

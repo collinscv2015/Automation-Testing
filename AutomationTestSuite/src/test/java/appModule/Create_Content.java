@@ -6,10 +6,15 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjects.Content;
  
- public class CreateMessage{
+ public class Create_Content{
  
 	 
-       public static void NewMessage(WebDriver driver) throws Exception{
+       public static void New_Content(WebDriver driver) throws Exception{
+    	   
+    	   
+        // Message UI ELEMENTS Presents
+    	
+    	   
     	   
       	// Create a New Message with no data, to throw validation error
 
@@ -66,6 +71,12 @@ import pageObjects.Content;
    		System.out.println("Expected Validation Height Error is: "+Height3_Error);
    		
    		Content.Height(driver).sendKeys("700");
+   		Content.Create_Button(driver).click();
+   		
+   		Content.Create_New_Variant(driver).click();
+   		Content.New_Variant(driver).click();
+   		Content.Name_Variant(driver).sendKeys("E2E New Variant");
+   		Content.Description_Variant(driver).sendKeys("E2E  New Variant Description");
    		Content.Create_Button(driver).click();
  
    }

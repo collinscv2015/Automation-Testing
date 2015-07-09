@@ -9,6 +9,9 @@ public class Content {
 private static WebElement element = null;
 
 
+// Message UI ELEMENTS Presents
+
+
 //Launch content Page
 
 public static WebElement Open_Content(WebDriver driver) throws Exception{
@@ -113,6 +116,36 @@ element = driver.findElement(By.cssSelector("li.error-list-item"));
 Thread.sleep(2000);
 return element;
 }
+
+
+// Creating New Variant
+
+public static WebElement Create_New_Variant(WebDriver driver) throws Exception{
+element = driver.findElement(By.cssSelector("button.dropdown-toggle.btn"));
+Thread.sleep(2000);
+return element;
+}
+
+public static WebElement New_Variant(WebDriver driver) throws Exception{
+element = driver.findElement(By.linkText("Variant"));
+Thread.sleep(2000);
+return element;
+}
+
+public static WebElement Name_Variant(WebDriver driver) throws Exception{
+element = driver.findElement(By.name("name"));
+Thread.sleep(2000);
+return element;
+}
+
+public static WebElement Description_Variant(WebDriver driver) throws Exception{
+element = driver.findElement(By.name("name"));
+Thread.sleep(2000);
+return element;
+}
+
+
+
 
 }
 
