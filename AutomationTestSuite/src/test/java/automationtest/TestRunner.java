@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import appModule.Create_Content;
+import appModule.addImageToCanvas;
 import utility.EnviromentURL;
 
 
@@ -31,6 +32,9 @@ public class TestRunner {
 
 	Create_Content.New_Content(driver);
 	System.out.println("Successfully, Created New Message and Variant.");
+
+	addImageToCanvas.imageWidget(driver);
+	System.out.println("Successfully, Added Image.");
 
 	}
 

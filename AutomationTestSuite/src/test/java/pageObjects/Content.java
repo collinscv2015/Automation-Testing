@@ -139,11 +139,23 @@ return element;
 }
 
 public static WebElement Description_Variant(WebDriver driver) throws Exception{
-element = driver.findElement(By.name("name"));
+element = driver.findElement(By.name("description"));
 Thread.sleep(2000);
 return element;
 }
 
+
+public static WebElement notification_Variant(WebDriver driver) throws Exception{
+element = driver.findElement(By.name("notification"));
+Thread.sleep(2000);
+return element;
+}
+
+public static WebElement Creat_Variant_Button(WebDriver driver) throws Exception{
+element = 	driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/footer/div/button"));
+Thread.sleep(5000);
+return element;
+}
 
 
 

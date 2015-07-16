@@ -1,10 +1,10 @@
-package content.Widget;
+package pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class image {
+public class imageWidget {
 
 private static WebElement element = null;
 
@@ -226,6 +226,14 @@ element = driver.findElement(By.name("name"));
 Thread.sleep(2000);
 return element;
 }
+
+//Canvas UI
+public static WebElement Canvas(WebDriver driver) throws Exception{
+element = driver.findElement(By.xpath("//div[2]/div/div[2]/div/div/div"));
+Thread.sleep(2000);
+return element;
+}
+
 
 }
 

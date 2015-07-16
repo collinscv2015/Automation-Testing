@@ -77,7 +77,12 @@ import pageObjects.Content;
    		Content.New_Variant(driver).click();
    		Content.Name_Variant(driver).sendKeys("E2E New Variant");
    		Content.Description_Variant(driver).sendKeys("E2E  New Variant Description");
-   		Content.Create_Button(driver).click();
+   		Content.notification_Variant(driver).sendKeys("E2E  notification");
+   		Thread.sleep(2000);
+   		Content.Creat_Variant_Button(driver).click();
+   		Thread.sleep(2000);
+   		 
+
  
    }
  
