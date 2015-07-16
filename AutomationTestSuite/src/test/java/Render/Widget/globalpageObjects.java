@@ -261,6 +261,14 @@ return element;
 }
 
 
+//Vertical Padding
+public static WebElement booth(WebDriver driver) throws Exception{
+element = driver.findElement(By.name("paddingY"));
+Thread.sleep(1000);
+return element;
+}
+
+
 }
 
 
